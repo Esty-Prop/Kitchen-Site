@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600;700;900&display=swap');
+:root {
+    --MAIN_COLOR: black;
+    --font_COLOR: white;
+    --MAIN_HIGHT: 100vh;
+    --MAIN_GRADIENT: linear-gradient(0deg, rgba(3, 3, 3, 0.354), rgba(0, 0, 0, 0.804))
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    padding: 0;
+    margin-top: -120px;
+    top: 5px;
+    left: 5px;
+    right: 0;
+    z-index: 10;
+}
+
+.logo {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--MAIN_COLOR);
+    width: 50px;
+    margin: 20px;
+    max-width: 100%;
+}
+
+.menu_icon {
+    border-radius: 10px;
+    padding: 10px;
+    width: 30px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--MAIN_COLOR);
+    color: var(--font_COLOR);
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--MAIN_COLOR);
+    color:var(--font_COLOR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu li {
+    z-index: 2;
+    list-style: none;
+    text-align: center;
+    color: var(--font_COLOR);
+    padding: 20px;
+    font-size: 30pt;
+}
+
+.menu li a {
+    color: var(--font_COLOR);
+    text-decoration: none;
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+}
+#cont {
+    display: none;
+}
+
+#show:target #cont {
+    display: inline-block;
+}
+
+#show:target #show {
+    display: none;
+}
+/* footer */
+
+form label {
+    color: var(--font_COLOR);
+}
+
+input {
+    padding: 20px;
+    border-radius: 100px;
+    border-style: none;
+    flex-grow: 1;
+    margin: 10px;
+    font-size: 14pt;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.258);
+    color: var(--font_COLOR);
+}
+
+form {
+    margin: 5vw 5vw 10px 5vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+::placeholder {
+    font-size: 14pt;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+form button {
+    font-size: 14pt;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--font_COLOR) !important;
+}
+
+#send:hover {
+    background-color:var(--MAIN_COLOR) !important;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0.836), rgba(0, 0, 0, 0.945)), url(../imageKitchen/Guttman\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.cantact_bottun i{
+    font-size: 15pt;
+    color: rgb(110, 110, 110);   
+}
+.cantact_bottun i:hover{
+    
+    color: var(--font_COLOR);   
+    margin-bottom: 10px;
+}
+.cantact_bottun{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width:992px) {
+    
+    input {
+        padding: 10px;
+
+    }
+    footer{
+        height: 35vh;
+    }
+    form {
+        flex-wrap: wrap;
+    }
+}
+

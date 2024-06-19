@@ -1,0 +1,101 @@
+:root {
+    --MAIN_COLOR: black;
+    --font_COLOR: white;
+    --MAIN_HIGHT: 100vh;
+    --MAIN_GRADIENT: linear-gradient(0deg, rgba(3, 3, 3, 0.836), rgba(0, 0, 0, 0.945));
+}
+
+.wrap_img{
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p_name{
+    flex-basis: 30vw;
+    width: 100%;
+}
+.n_sticy
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    animation-name: move_background;
+    animation-duration:150s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+.p1 .n_sticy{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Spileman3.jpg);
+}
+.p2 .n_sticy{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Elias\ 1.jpg);
+}
+.p3 .n_sticy{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Goldberger\ 2.jpg);
+}
+.p4 .n_sticy{
+    background:  var(--MAIN_GRADIENT), url(../imageKitchen/Grunwald\ 2.jpeg);
+}
+.p5 .n_sticy{
+    background:  var(--MAIN_GRADIENT), url(../imageKitchen/Pal\ 2.jpg);
+}
+.p6 .n_sticy{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Perlmutter\ 2.jpg);
+}
+.p_name h1{
+    transform: rotate(90deg);
+}
+.p_img
+{
+    flex-basis: 70vw;
+    width: 100%;
+    height: 100%;
+}
+.p_img img {
+    width: 100%;
+}
+h1{
+    font-size: 40pt;
+    font-weight: 200;
+    text-align: center;
+    animation: slide-left 20s linear infinite;
+}
+
+@media only screen and (max-width:992px) {
+    
+}
+
+@media only screen and (max-width:768px) {
+    h1{
+        font-size: 20pt;
+    }
+}
+.t{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+     
+}
+
+@keyframes move_background{
+    0%{
+        background-position: left;
+    }
+    33%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+    
+}

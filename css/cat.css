@@ -1,0 +1,101 @@
+:root {
+    --MAIN_COLOR: black;
+    --font_COLOR: white;
+    --MAIN_GRADIENT: linear-gradient(0deg, rgba(3, 3, 3, 0.58), rgba(0, 0, 0, 0.804));
+}
+.big_header h1 {
+    font-size: 40pt;
+    font-weight: 100;
+}
+
+.big_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font_COLOR);
+    font-weight: 100;
+}
+
+table {
+    margin: 0vw 10vw 10vw 10vw;
+    font-family: 'Raleway', sans-serif;
+    backdrop-filter: blur(5px);
+    border-color:var(--MAIN_COLOR);
+    background-color:rgba(0, 0, 0, 0.297);
+}
+tr img{
+    border-style: solid;
+    border-width: 1px;
+}
+.tab_img,
+.tab_text {
+    width: 20vw;
+    font-size: 20pt;
+    font-weight: 100;
+}
+
+.main_tr {
+    position: sticky;
+    top: 0;
+    background-color:var(--MAIN_COLOR);
+    color: var(--font_COLOR);
+    font-weight: 800 !important;
+}
+
+.catrgory1 section,.catrgory1 .big_header{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/forious-pull-down-kitchen-faucet.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.catrgory2 section,.catrgory2 .big_header{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.catrgory3 section,.catrgory3 .big_header{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/1jff.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.catrgory4 section,.catrgory4 .big_header{
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/POLYANKA44.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.catrgory1,.catrgory2,.catrgory3,.catrgory4{
+
+    border-style: solid;
+    border-width: 0 0 2px 0 ;
+    border-color:var(--MAIN_COLOR);
+}
+table img{
+    width: 200px;
+}
+
+@media only screen and (max-width:992px) {
+    table img{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .tab_img,
+    .tab_text {
+        font-size: 16pt;
+    }
+    table img{
+        width: 80px;
+    }
+    .big_header{
+        height: 40vh;
+    }
+}

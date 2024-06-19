@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600;700;900&display=swap');
+
+:root {
+    --MAIN_COLOR: black;
+    --font_COLOR: white;
+    --MAIN_HIGHT: 100vh;
+    --MAIN_GRADIENT: linear-gradient(0deg, rgba(3, 3, 3, 0.354), rgba(0, 0, 0, 0.804))
+}
+
+/* first frame */
+.firs_frame {
+    height: var(--MAIN_HIGHT);
+    background-color: var(--MAIN_COLOR);
+    background: linear-gradient(0deg, rgba(3, 3, 3, 0.603), rgba(0, 0, 0, 0.804)), url(../imageKitchen/Berkowitz\ 1660_Kitchen\(2\)_final_04.05.2022.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.firstF {
+    height: var(--MAIN_HIGHT);
+    width: 100VW;
+}
+.firs_frame h1 {
+    font-size: 50pt;
+    font-weight: 100;
+}
+/* main titls */
+.title h1 {
+    color: font_COLOR;
+    font-weight: 100;
+    font-size: 100px;
+
+
+}
+.title {
+    margin: 5vw;
+}
+/* about */
+.about {
+    padding: 5vw;
+    height: 100vh;
+    color: var(--MAIN_COLOR);
+    background-image: url(../imageKitchen/Berkowitz\ 1660_Kitchen\(2\)_final_04.05.2022.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.aboutText {
+    flex-basis: 30vw;
+    width: 50vw;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.221);
+    backdrop-filter: blur(5px);
+    flex-grow: 1;
+}
+
+.aboutText h1 {
+    font-weight: 300;
+}
+
+.about .title {
+    color: var(--MAIN_COLOR) !important;
+}
+
+.about_img {
+    background-image: url(../imageKitchen/LCH106.jfif);
+    background-size: cover;
+    background-position: left;
+    flex-grow: 1;
+    flex-basis: 30vw;
+    margin-left: 5vw;
+    border-radius: 10px;
+    opacity: 1;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 20px 20px rgb(0 0 0 / 10%) !important;
+}
+.about video{
+    width: 100%;
+    border-radius: 10px  10px 0 0 ;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+}
+.vidio_section video{
+    width: 100%;
+
+}
+/* kategory */
+.kategory {
+    margin: 5vw;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+    gap: 20px;
+}
+.fa-regular{
+font-size: 40px;
+}
+
+.cat_img {
+    background-position: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* HOVER OFF */
+    -webkit-transition: background-position 1s, transform 1s, opacity 1s;
+}
+
+.cat_img:hover {
+    opacity: 0.6;
+    transform: scale(0.95);
+    transition-property: all;
+    background-position: -120px;
+    transition-duration: 1.5s;
+}
+
+.cat_img:hover a {
+    transition-duration: 1s;
+    color: var(--font_COLOR);
+    display: block;
+}
+
+.cat_img a {
+    display: none;
+    font-size: 25pt;
+}
+
+.kategory h4 {
+    font-weight: 200;
+}
+
+.kategory h3 {
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+.faucet {
+    border-radius: 10px;
+    background-image: url(../imageKitchen/forious-pull-down-kitchen-faucet.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/3;
+    width: 100%;
+}
+
+.f_text {
+    grid-row: 3/4;
+}
+
+.f2_text {
+    grid-row: 1/2;
+}
+
+.flooring {
+    border-radius: 10px;
+    grid-row: 2/4;
+    background-image: url(../imageKitchen/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wall_covering {
+    border-radius: 10px;
+    grid-row: 1/3;
+    background-image: url(../imageKitchen/1jff.jpeg);
+    background-size: cover;
+}
+
+.lighting {
+    border-radius: 10px;
+    grid-row: 2/4;
+    background-image: url(../imageKitchen/POLYANKA44.jfif);
+    background-size: cover;
+}
+/* prujects */
+.projects {
+    display: flex;
+    flex-direction: row;
+    margin: 5vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.project {
+    box-shadow: 0.5px 5px 20px 5px rgba(20, 20, 20, 0.189);
+    min-height: 350px;
+    border-radius: 10px;
+    flex-basis: 30vw;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.5;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--font_COLOR);
+
+    /* HOVER OFF */
+    -webkit-transition: flex-grow 1s, justify-content 1s;
+
+}
+
+.project h2 {
+    opacity: 0;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 25pt;
+    font-weight: 200;
+    color: var(--MAIN_COLOR);
+    margin-bottom: 20px;
+
+}
+
+.project a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.project:hover h2 {
+    color: var(--font_COLOR);
+    opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.project:hover {
+    flex-grow: 1;
+    transition-duration: 1s;
+}
+
+.p1 {
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Spielman2.jpg);
+    background-size: cover;
+}
+
+.p2 {
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Elias\ 1.jpg);
+    background-size: cover;
+}
+
+.p3 {
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Goldberger\ 1.jpg);
+    background-size: cover;
+}
+
+.p4 {
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Grunwald\ 1.jpeg);
+    background-size: cover;
+}
+
+.p5 {
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Pal\ 1.jpg);
+    background-size: cover;
+}
+
+.p6 {
+    background: var(--MAIN_GRADIENT), url(../imageKitchen/Perlmutter\ 1.jpg);
+    background-size: cover;
+}
+
+
+
+@media only screen and (max-width:992px) {
+    .title h1 {
+        font-size: 60px;
+    }
+    .fa-regular{
+        font-size: 25px;
+        
+        }
+}
+
+@media only screen and (max-width:768px) {
+    .aboutText {
+        padding: 20px;
+    }
+
+    .project {
+        flex-basis: 70vw;
+        flex-grow: 1;
+        margin: 0 0 20px 0;
+    }
+
+    .kategory {
+        margin: 5vw;
+        gap: 15px;
+    }
+}
+
+
+  
